@@ -124,7 +124,7 @@ header {
 .card-number {
     color: var(--fc-grey);
     font-family: 'Poppins', sans-serif;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-2lg);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -276,6 +276,10 @@ header {
     cursor: pointer;
 }
 
+.background-color {
+    background-color: var(--fc-grey-f8);
+}
+
 .bg-image {
     background-image: url("../images/hero-section-image.png");
     background-size: contain;
@@ -285,6 +289,97 @@ header {
     display: flex;
     align-items: end;
 }
+
+.bg-shadow {
+    border-radius: 0px 10px 10px 10px;
+    background: var(--fc-white);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+    padding: 12px 17px;
+    max-width: 436px;
+}
+
+.bg-shadow:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.modal-body div span img {
+    width: 32px;
+    height: 32px;
+}
+
+.bg-color {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: var(--fc-grey-fa);
+    padding: 21px 23px 26px 27px;
+}
+
+.jhone {
+    color: var(--fc-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-lg);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.modal-text {
+    color: var(--fc-grey);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-lg);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 402px;
+}
+
+.comment {
+    color: var(--fc-grey);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-lg);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.modal-dialog {
+    max-height: 700px;
+    max-width: 1320px !important;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+
+.scroll-box {
+    height: 590px;
+    overflow: auto;
+
+}
+
+.cross-circle {
+    width: 61px;
+    height: 61px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--fc-white);
+
+}
+
+.absolute-cross-svg {
+    position: absolute;
+    right: -58px;
+    top: -61px;
+
+}
+
+.svg:hover svg path {
+    fill: red;
+}
+
 
 @media(max-width:992px) {
     .label {
@@ -348,43 +443,59 @@ header {
     .image-width-1 {
         width: 30%;
     }
-          /* .bg-image {
-              min-height: calc(80vh - 96px);
-            
-          } */
 
 }
+
 @media(min-width:320px) {
     .bg-image {
         min-height: calc(78vh - 96px);
 
     }
+
+    .scroll-box {
+        height: 390px;
+
+
+    }
 }
+
 @media(min-width:400px) {
     .bg-image {
         min-height: calc(70vh - 96px);
 
     }
 }
+
 @media(min-width:576px) {
     .bg-image {
         min-height: calc(70vh - 96px);
 
     }
+
 }
+
 @media(min-width:768px) {
     .bg-image {
         min-height: calc(65vh - 96px);
 
     }
+
 }
-@media(min-width:992px){
+
+@media(min-width:992px) {
     .bg-image {
-            min-height: calc(80vh - 96px);
-        }
+        min-height: calc(80vh - 96px);
+    }
 }
+
 @media(min-width:1200px) {
     .bg-image {
         min-height: calc(85vh - 96px);
+    }
+
+    .scroll-box {
+        height: 590px;
+
+
     }
 }
